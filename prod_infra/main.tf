@@ -4,6 +4,10 @@ provider "aws"{
 	secret_key=var.secret_key
 }
 
+module "vpc_modules" {
+  source = ".//vpc_modules"
+}
 module "ec2_modules"{
 	source=".//ec2_modules"
 }
+
