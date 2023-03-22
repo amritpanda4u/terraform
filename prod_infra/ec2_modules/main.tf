@@ -24,7 +24,7 @@ resource "aws_security_group" "SG1" {
 	
 	ingress {
 		cidr_blocks = [ "0.0.0.0/0" ]
-	  description = "Port for http"
+	  description = "Port for SSH"
 	  from_port = 22
 	  protocol = "TCP"
 	  to_port = 22
